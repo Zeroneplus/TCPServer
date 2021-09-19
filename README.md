@@ -1,4 +1,4 @@
-# A Simple TCP Server
+# A Simple Multithreading TCP Server
 
 ## 简介
 一个简单的TCP Server，仿照linyacool的[WebServer](https://github.com/linyacool/WebServer)和chenshuo的[muduo](https://github.com/chenshuo/muduo)写的。整个系统的抽象模型和muduo一致，也包含了Channel，Epoll，EventLoop，EventLoopThread，EventLoopThreadPool这些类，编程模型也是one loop per thread。目前实现了主线程建立连接，然后分发到不同线程，数据收发以及同步日志，但是http解析尚未实现，还需要添加更多的读取处理逻辑。
