@@ -34,7 +34,7 @@ DataConn::DataConn(EventLoop *loop, int connfd)
 
 DataConn::~DataConn()
 {
-    // close(fd_);
+    close(fd_);
 }
 
 void DataConn::handleRead()
